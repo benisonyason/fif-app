@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" /> -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FIF Web Map</title>
+</head>
+
+<body>
+  <div class="top-bar">
+    <h1>Welcome to FIF infrastructure Web Map Explorer</h1>
+  </div>
+  <div id="mySidebar" class="sidebar">
+    <a href="#">Query by Attributes</a>
+    <a href="#">Query by Polygon</a>
+    <a href="#">Click Event</a>
+    <a href="#">Mouse Hover</a>
+  </div>
+  <div class="content-sidebar">
+    <div id="map"></div>
+    <div class="side-panel">
+      <div class="summaryList">
+        <h2>Summary</h2>
+        <div class="badge_content">
+          <a href="#" class="notification">
+            <span>School</span>
+            <span class="badge">754,746</span>
+          </a>
+        </div>
+        <div class="badge_content">
+          <a href="#" class="notification">
+            <span>Water </span>
+            <span class="badge">1,093,783</span>
+          </a>
+        </div>
+        <div class="badge_content">
+          <a href="#" class="notification">
+            <span>Health</span>
+            <span class="badge">1,239,984</span>
+          </a>
+        </div>
+      </div>
+      <!-- <table id="statebreakdown">
+        <thead>
+          <tr>
+            <th>State</th>
+            <th>LGA</th>
+            <th>School Count</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table> -->
+    </div>
+  </div>
+  <div id="mouse-position"></div>
+  <div id="popup" class="ol-popup">
+    <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+    <div id="popup-content"></div>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
